@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  angularstore.api:
+    image: ${DOCKER_REGISTRY-}angularstoreapi
+    build:
+      context: .
+      dockerfile: AngularStore.Api/Dockerfile
+
+  angularstore.db:
+    image: postgres:latest
+    container_name: PostgresDatabase
+    environment:
+      - POSTGRES_DB=angularstore-db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./.containers/database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

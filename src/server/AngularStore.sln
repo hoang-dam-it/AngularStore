@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A15B9795-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DBF11388-0441-410B-BFF3-3C20D3A79606}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{9B2F5C8D-CF79-4107-B539-62202D283F53}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{29C2A956-171B-4860-9199-4599BB355EC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularStore.Api", "AngularStore.Api\AngularStore.Api.csproj", "{E2151835-915E-491A-99F6-B6951E4802E1}"
@@ -20,6 +18,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularStore.Infrastructure", "AngularStore.Infrastructure\AngularStore.Infrastructure.csproj", "{F1A73C1E-C88C-42B3-980E-F98638A986E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularStore.Persistence", "AngularStore.Persistence\AngularStore.Persistence.csproj", "{4D9E3CEC-9E69-4161-BC35-469917D282E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0D9E5069-BC88-43B3-85EE-F442DF90F38A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6311C806-D5D7-4BA7-9D20-0A2CAFB8D7FF}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9B0D7AC6-1C4C-4553-9878-518448027A1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,11 +54,18 @@ Global
 		{4D9E3CEC-9E69-4161-BC35-469917D282E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D9E3CEC-9E69-4161-BC35-469917D282E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D9E3CEC-9E69-4161-BC35-469917D282E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0D7AC6-1C4C-4553-9878-518448027A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0D7AC6-1C4C-4553-9878-518448027A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0D7AC6-1C4C-4553-9878-518448027A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0D7AC6-1C4C-4553-9878-518448027A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A15B9795-38B1-4450-8D7C-9DA6C17B92CC} = {0D9E5069-BC88-43B3-85EE-F442DF90F38A}
+		{DBF11388-0441-410B-BFF3-3C20D3A79606} = {0D9E5069-BC88-43B3-85EE-F442DF90F38A}
+		{29C2A956-171B-4860-9199-4599BB355EC9} = {0D9E5069-BC88-43B3-85EE-F442DF90F38A}
 		{E2151835-915E-491A-99F6-B6951E4802E1} = {29C2A956-171B-4860-9199-4599BB355EC9}
 		{54465FDC-F558-497D-9E6B-0D835B32E273} = {A15B9795-38B1-4450-8D7C-9DA6C17B92CC}
 		{B96A118D-5189-4A86-BD3E-9FBDDB5F6A9C} = {A15B9795-38B1-4450-8D7C-9DA6C17B92CC}
